@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Pipper</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header>
+      <img src="/images/feather.svg" alt="Avatar" />
+      <h1 class="title">Pipper</h1>
+    </header>
+    <aside class="sideBar"><img class="icons" src="./images/home.svg" alt="home" /> <img class="icons" src="./images/mail.svg" alt="" /></aside>
+    <div class="modal"></div>
+    <form action="">
+      <div class="messageField">
+        <label class="messageLabel" for="message">Write a pip</label>
+        <div class="pipField">
+          <div class="overField">
+            <img class="avatar" src="./images/adventurer-1730982256035.svg" alt="Avatar" />
+            <div class="usernameField">
+              <label for="username">Write a username</label>
+              <input type="text" id="username" />
+            </div>
+          </div>
+          <textarea id="message">Pip Pip...</textarea>
+          <p id="id"></p>
+          <p id="textLimit">Limit: 0/255</p>
+          <span class="underline"></span>
+          <button id="pipButton" type="submit">Post pip<img class="buttonImage" src="./images/corner-down-left.svg" alt="buttonImage" /></button>
+        </div>
+      </div>
+    </form>
+    <div class="otherPips">
+      <h2>Other Pips</h2>
+      <div class="otherPipContainer"></div>
+    </div>
+    <template id="otherPipTemplate">
+      <div id="pipPost">
+        <img class="avatarClone" src="" alt="avatar" />
+        <p class="pipText"></p>
+        <h3 id="pipID"></h3>
+      </div>
+    </template>
+    <script src="script.js"></script>
+  </body>
+</html>

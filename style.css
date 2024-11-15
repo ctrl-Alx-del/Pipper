@@ -1,0 +1,222 @@
+* {
+  margin: 0 auto;
+}
+
+body {
+  height: 100%;
+}
+
+h1 {
+  font-size: 50px;
+  padding-top: 25px;
+  padding-bottom: 25px;
+  text-align: center;
+  color: white;
+  font-family: fantasy;
+}
+
+header {
+  background-color: rgb(0, 157, 255);
+  display: grid;
+  grid-template-columns: 5rem 1fr;
+  align-items: center;
+  height: 7rem;
+}
+
+.messageField {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 50px;
+}
+
+.messageLabel {
+  font-size: 2em;
+  font-family: fantasy;
+  background-color: rgb(0, 157, 255);
+  color: white;
+  padding: 7px;
+  padding-left: 100px;
+  padding-right: 100px;
+  border-radius: 10px;
+}
+
+label:hover {
+  cursor: pointer;
+  margin-bottom: 0px;
+  color: rgb(0, 157, 255);
+  background-color: rgb(0, 49, 122);
+  transition: 500ms;
+}
+
+textarea {
+  border: 1px solid rgb(0, 157, 255);
+  border-radius: 1em;
+  font-size: 1em;
+  height: 140px;
+  width: 400px;
+  box-sizing: border-box;
+  padding: 10px;
+  resize: none;
+  box-sizing: border-box;
+}
+
+textarea:focus {
+  border: 3px solid rgb(0, 157, 255);
+  transition: 100ms;
+}
+
+#pipButton {
+  border: 2px solid rgb(87, 87, 87);
+  background-color: rgb(0, 157, 255);
+  color: white;
+  font-size: 1.5em;
+  padding: 5px;
+  border-radius: 10px;
+  margin-top: 10px;
+  margin-left: initial;
+}
+
+#pipButton:hover {
+  cursor: pointer;
+  border: 2px solid rgb(0, 157, 255);
+  background-color: rgb(0, 49, 122);
+  color: rgb(0, 157, 255);
+  transition: 500ms;
+}
+
+.pipField {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  z-index: 2;
+}
+
+.underline {
+  margin-top: 10px;
+  border-bottom: 3px solid rgba(0, 157, 255, 0.378);
+  width: 100%;
+}
+
+.title {
+  animation: bounce 2s;
+  animation-iteration-count: 2;
+}
+
+@keyframes bounce {
+  0% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+  100% {
+    transform: translateY(0px);
+  }
+}
+
+/* skal være grid for at tilføje flere elementer dynamisk */
+.otherPips {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 50px;
+  margin-bottom: 50px;
+  color: white;
+}
+
+h2 {
+  background-color: rgb(0, 157, 255);
+  width: 200px;
+  border-radius: 5px;
+  text-align: center;
+  font-size: 2em;
+  font-family: fantasy;
+}
+
+#textLimit {
+  border-radius: 9px;
+  padding: 4px;
+  font-family: monospace;
+  font-weight: bold;
+  font-size: 1.2rem;
+  margin-top: 10px;
+  color: white;
+  background-color: rgb(0, 157, 255);
+}
+
+.buttonImage {
+  padding-left: 10px;
+}
+
+.overField {
+  width: 400px;
+  margin: 0px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.usernameField {
+  display: flex;
+  flex-direction: column;
+}
+
+#username {
+  margin-bottom: 5px;
+}
+
+.avatar {
+  height: 4rem;
+  width: 4rem;
+}
+
+.pipText {
+  color: black;
+}
+
+#pipID {
+  color: black;
+}
+
+#pipPost {
+  height: 16rem;
+  width: 30rem;
+  border: solid 1px black;
+  display: flex;
+  flex-direction: row;
+  margin-top: 2rem;
+}
+
+.modal {
+  visibility: hidden;
+  background-color: rgba(0, 0, 0, 0.549);
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  z-index: 1;
+}
+
+.sideBar {
+  height: 10%;
+  width: 10vw;
+  border: solid white 1px;
+  border-radius: 5px;
+  float: left;
+  position: fixed;
+  display: flex;
+  flex-direction: column;
+  justify-content: baseline;
+  align-items: center;
+  background-color: rgb(0, 157, 255);
+}
+
+.icons {
+  margin-top: 5px;
+}
+
+.icons:hover {
+  cursor: pointer;
+}
